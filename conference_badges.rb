@@ -33,6 +33,12 @@ def assign_rooms(attendees)
     end
     return badgeArray
 end
+#or
+def assign_rooms(attendees)
+    badgeArray = []
+    attendees.each_with_index {|attendee, room_assignment| badgeArray.push("Hello, #{attendee}! You'll be assigned to room #{room_assignment + 1}!")}
+    return badgeArray
+end
 
 #Third task
 def printer(attendees)
