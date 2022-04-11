@@ -3,9 +3,12 @@ def badge_maker(name)
     return "Hello, my name is #{name}."
 end
 
+
+#Second task
 def batch_badge_creator(attendees)
     attendees.map {|attendee| "Hello, my name is #{attendee}."}
 end
+
 #or
 def batch_badge_creator(attendees)
     messages = []
@@ -15,7 +18,8 @@ def batch_badge_creator(attendees)
     return messages
 end
 
-#Second task
+
+#Thirdtask
 def assign_rooms(attendees)
     badgeArray = []
     room_assignments = 1
@@ -25,6 +29,7 @@ def assign_rooms(attendees)
     end
     badgeArray
 end
+
 #or
 def assign_rooms(attendees)
     badgeArray = []
@@ -33,6 +38,7 @@ def assign_rooms(attendees)
     end
     return badgeArray
 end
+
 #or
 def assign_rooms(attendees)
     badgeArray = []
@@ -40,7 +46,8 @@ def assign_rooms(attendees)
     return badgeArray
 end
 
-#Third task
+
+#Fourth task
 def printer(attendees)
     attendees.map do |attendee| 
         puts "Hello, my name is #{attendee}."
@@ -51,6 +58,7 @@ def printer(attendees)
         room_assignments += 1
     end
 end
+
 #or
 def printer(attendees)
     batch_badge_creator(attendees).each do |attendee|
@@ -60,6 +68,7 @@ def printer(attendees)
         puts room_assignment
     end
 end
+
 #or
 def printer(attendees)
     for item in batch_badge_creator(attendees)
