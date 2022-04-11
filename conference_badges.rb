@@ -60,3 +60,12 @@ def printer(attendees)
         puts room_assignment
     end
 end
+#or
+def printer(attendees)
+    for item in batch_badge_creator(attendees)
+      puts item
+    end
+    for item in assign_rooms(attendees)
+      puts item
+    end
+  end
